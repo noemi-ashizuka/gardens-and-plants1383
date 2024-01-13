@@ -1,0 +1,25 @@
+.card-top-icon-link {
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $white;
+
+  &.danger-link {
+    background-color: $black;
+  }
+
+  &.danger-link:hover {
+    background-color: $red;
+  }
+
+  &.regular-link {
+    background-color: $green;
+  }
+
+  &.regular-link:hover {
+    background-color: $blue;
+  }
+}

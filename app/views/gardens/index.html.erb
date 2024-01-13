@@ -1,0 +1,11 @@
+<div class="container text-center mt-4">
+  <h1>Our Gardens</h1>
+
+  <ul class="list-unstyled row row-cols-12 gap-2">
+    <% @gardens.each do |garden| %>
+      <li class="col-12 col-sm-6 col-md-4">
+        <%= render 'gardens/garden', garden: garden %>
+      </li>
+    <% end %>
+  </ul>
+</div>

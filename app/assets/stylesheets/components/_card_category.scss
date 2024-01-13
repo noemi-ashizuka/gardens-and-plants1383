@@ -1,0 +1,38 @@
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  
+  .plus-link {
+    color: white;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+  }
+}
+
+.card-tags {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 80%;
+  span {
+    background: $blue;
+    font-size: .7em;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+  a {
+    color: white;
+  }
+}

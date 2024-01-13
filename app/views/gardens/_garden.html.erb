@@ -1,0 +1,8 @@
+<div class="card-category position-relative" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= garden.banner_url %>')">
+  <%= garden.name %>
+
+  <%= link_to garden_path(garden),
+    class: "card-top-icon-link regular-link position-absolute top-0 start-100 rounded-circle translate-middle" do %>
+    <i class="fa-solid fa-eye fa-xs"></i>
+  <% end %>
+</div>

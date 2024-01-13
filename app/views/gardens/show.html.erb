@@ -1,0 +1,27 @@
+
+<div class="banner d-flex px-5" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= @garden.banner_url %>');">
+  <div class="container">
+    <h1><%= @garden.name %></h1>
+  </div>
+
+  <div class="container bg-light p-4 rounded-2 shadow-sm w-50 mx-auto">
+    <h4>Add a plant to this garden</h4>
+    <%= simple_form_for [@garden, @plant] do |f| %>
+      <%= f.input :name %>
+      <%= f.input :picture_url %>
+
+      <%= f.button :submit, class: "btn btn-primary" %>
+    <% end %>
+  </div>
+
+</div>
+
+<div class="container text-center mt-4">
+  <ul class="list-unstyled row row-cols-12 gap-2">
+    <% @garden.plants.each do |plant| %>
+      <li class="col-12 col-sm-6 col-md-4">
+        <%= render 'plants/plant', plant: plant %>
+      </li>
+    <% end %>
+  </ul>
+</div>
